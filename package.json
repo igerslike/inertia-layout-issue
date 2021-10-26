@@ -1,0 +1,53 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch --https",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "watch-ssr": "mix watch --https --mix-config=webpack.ssr.mix.js",
+        "node-ssr": "nodemon public/js/ssr.ts --watch",
+        "hot": "mix watch --hot --https",
+        "prod": "npm run production",
+        "production": "mix --production && mix --production --mix-config=webpack.ssr.mix.js"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@inertiajs/inertia": "^0.10.1",
+        "@inertiajs/inertia-vue3": "^0.5.2",
+        "@inertiajs/progress": "^0.2.6",
+        "@tailwindcss/forms": "^0.3.3",
+        "@tailwindcss/typography": "^0.4.1",
+        "@types/express": "^4.17.13",
+        "@types/lodash": "^4.14.175",
+        "@types/node": "^16.10.9",
+        "@types/webpack-env": "^1.16.3",
+        "@types/webpack-node-externals": "^2.5.3",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "@vue/compiler-sfc": "^3.2.20",
+        "autoprefixer": "^10.3.4",
+        "axios": "^0.21",
+        "browser-sync": "^2.27.5",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "eslint": "^7.29.0",
+        "eslint-plugin-vue": "^7.0.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "nodemon": "^2.0.12",
+        "postcss": "^8.3.6",
+        "postcss-import": "^14.0.2",
+        "tailwindcss": "^2.2.15",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.4.4",
+        "vue": "^3.2.20",
+        "vue-loader": "^16.6.0"
+    },
+    "dependencies": {
+        "@vue/server-renderer": "^3.2.20",
+        "dayjs": "^1.10.7",
+        "express": "^4.17.1",
+        "laravel-mix-merge-manifest": "^2.0.0",
+        "webpack-node-externals": "^3.0.0"
+    }
+}
